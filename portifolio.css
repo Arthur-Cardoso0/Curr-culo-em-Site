@@ -149,7 +149,7 @@ nav ul li a.active {
   color: #000
 }
 
-.botaozap {
+.botao-med {
   background-color: #000;
   color: #fff;
   border: 2px solid #fff;    
@@ -165,70 +165,7 @@ nav ul li a.active {
   width: fit-content;
 }
 
-.botaozap:hover {
-  background-color: #fff;
-  color: #000
-}
-
-.botaoEmail {
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #fff;    
-  padding: 12px 24px;       
-  font-size: 1.2rem;       
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: none;
-  width: fit-content;
-}
-
-.botaoEmail:hover {
-  background-color: #fff;
-  color: #000
-}
-
-.botaogram {
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #fff;    
-  padding: 12px 24px;       
-  font-size: 1.2rem;       
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: none;
-  width: fit-content;
-}
-
-.botaogram:hover {
-  background-color: #fff;
-  color: #000
-}
-
-.botaodin {
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #fff;    
-  padding: 12px 24px;       
-  font-size: 1.2rem;       
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: none;
-  width: fit-content;
-}
-
-.botaodin:hover {
+.botao-med:hover {
   background-color: #fff;
   color: #000
 }
