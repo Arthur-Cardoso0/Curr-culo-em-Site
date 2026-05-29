@@ -1,45 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const links = document.querySelectorAll("nav ul li a");
-  const sections = document.querySelectorAll("main, section");
+  const sections = document.querySelectorAll("section");
 
-  sections.forEach(sec => {
-    sec.style.display = sec.id === "inicio" ? "block" : "none";
-  });
+  function showSection(id) {
+    sections.forEach(sec => {
+      sec.classList.remove("visible");
+    });
+    const target = document.getElementById(id);
+    if (target) target.classList.add("visible");
 
-  links[0].classList.add("active");
+    links.forEach(l => {
+      l.classList.toggle("active", l.getAttribute("href") === `#${id}`);
+    });
+  }
+
+  showSection("inicio");
+
   links.forEach(link => {
-    link.addEventListener("click", event => {
-      event.preventDefault();
-      const destino = link.getAttribute("href").substring(1);
-      sections.forEach(sec => sec.style.display = "none");
-      const alvo = document.getElementById(destino);
-      if (alvo) alvo.style.display = "block";
-      links.forEach(l => l.classList.remove("active"));
-      link.classList.add("active");
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const id = link.getAttribute("href").replace("#", "");
+      showSection(id);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   });
-});
-document.addEventListener("DOMContentLoaded", function() {
-  const botao = document.getElementById("botaoProjetos");
-  botao.addEventListener("click", function() {
-    window.open("https://github.com/Arthur-Cardoso0", "_blank");
+
+  document.querySelectorAll("[data-href]").forEach(el => {
+    el.addEventListener("click", () => {
+      window.open(el.dataset.href, "_blank", "noopener");
+    });
   });
-});
-document.addEventListener("DOMContentLoaded", function() {
-  const botaozap = document.getElementById("botaoWhatsapp");
-  botaozap.addEventListener("click", function() {
-    window.open("https://wa.me/qr/LQTOK72QVC5DN1", "_blank");
-  });
-});
-document.addEventListener("DOMContentLoaded", function() {
-  const botaogram = document.getElementById("botaogram");
-  botaogram.addEventListener("click", function() {
-    window.open("https://www.instagram.com/arthur.cds_/", "_blank");
-  });
-});
-document.addEventListener("DOMContentLoaded", function() {
-  const botaodin = document.getElementById("botaodin");
-  botaodin.addEventListener("click", function() {
-    window.open("https://www.linkedin.com/in/arthur-cardoso4613", "_blank");
-  });
+
 });

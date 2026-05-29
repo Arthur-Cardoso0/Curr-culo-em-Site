@@ -1,65 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Arthur Cardoso</title>
-    <link rel="stylesheet" href="portifolio.css">
-    <link rel="shortcut icon" type="imagex/png" href="logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Cardoso — Dev</title>
+  <link rel="shortcut icon" type="image/png" href="fotos/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+  <link rel="stylesheet" href="portifolio.css">
 </head>
-
 <body>
-    <header>
+  <header>
     <nav>
+      <span class="nav-logo">AC</span>
       <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#Projetos">Projetos</a></li>
+        <li><a href="#inicio" class="active">Início</a></li>
+        <li><a href="#projetos">Atividades</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
-    <main id="inicio" class="init">
-    <img src="Eu.png" alt="Uma foto Minha" class="foto">
-     <div class="margem">
-      <h3>Ola, meu nome é</h3>
-    <div class="nome"> <h1>Arthur <br> Cardoso</h1> </div>
-  <div class="sobre1">
-    <h1>Sobre mim</h1> 
-  <p>Sou um estudante de Engenharia de Software.
-     Venho aprendendo desenvolvimento de sistemas, inteligência artificial e boas práticas de programação. 
-     Já trabalhei em projetos acadêmicos envolvendo estruturas de dados,aplicações web e atividades simples em java 
-     e estou sempre em busca de aprender mais sobre programaçao e novas tecnologias.<br>
-     Tenho como objetivo Aprender a projetar e desenvolver sistemas eficientes, 
-     Compreender arquitetura de software e boas práticas de segurança e Aplicar conceitos de banco de dados e computação em nuvem.</p>
- </main>
- </div>
- <main id="Projetos" class="project"><a id="botaoProjetos" class="botao">Ver Projetos do GitHub</a>
-  <div class="card">
-  <h1>Sistema de Locação de Veículo</h1> 
-    <img src="sistema de loc veiculos.jpeg" alt="Sistema de Locação de Veículos" class="print">
+  
+  <section id="inicio">
+    <img src="fotos/Eu.png" alt="Foto de Arthur Cardoso" class="foto">
+    <div class="hero-text">
+      <p class="saudacao">Olá, meu nome é</p>
+      <h1 class="nome-titulo">Arthur<br>Cardoso</h1>
+      <p class="tagline">Estudante de <strong>Engenharia de Software</strong> apaixonado por desenvolvimento web, IA e boas práticas de programação.</p>
+      <div class="tech-pills">
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Next.js</span>
+        <span>MySQL</span>
+        <span>GitHub</span>
+      </div>
     </div>
-    <div class="card">
-    <h1>Diagrama Entidade-Relacionamento com software Workbench MySQL.</h1>
-    <img src="Diagrama Entidade-Relacionamento (DER) utilizando o software Workbench MySQL..jpeg" alt="Diagrama" class="print">
-  </div>
-    <div class="card">
-  <h1>Banco de Dados relacional simples</h1>
-    <img src="banco1.jpeg" alt="Banco de dados" class="print" > <img src="banco2.png" alt="Banco de dados" class="print">
- </main>
- </div>
- <div class="sla">
- <main id="contato">
-  <div class="contact">
-  <div><h1>Whatsapp</h1> <a id="botaoWhatsapp" class="botaozap">Ir para o Whatsapp</a>
-  </div>
-  <div><h1>Email</h1> <a href="mailto:arthur.c34@hotmail.com" id="botaoEmail" class="botaoEmail">Enviar Email</a>
-  </div>
-  <div><h1>Instagram</h1> <a id="botaogram" class="botaogram">Ir para o Instagram</a></div>
-  <div><h1>Linkedin</h1> <a id="botaodin" class="botaodin">Ir para o Linkedin</a></div>
-</div>
- </main>
-</div>
- <script src="portifolio.js"></script> 
+    <div class="sobre-bloco">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou estudante de Engenharia de Software e venho aprendendo desenvolvimento de sistemas, inteligência artificial e boas práticas de programação. Já trabalhei em projetos acadêmicos envolvendo estruturas de dados, aplicações web e atividades em Java — e estou sempre em busca de aprender mais sobre programação e novas tecnologias.
+      </p>
+      <p>
+        Meu objetivo é projetar e desenvolver sistemas eficientes, compreender arquitetura de software e boas práticas de segurança, além de aplicar conceitos de banco de dados e computação em nuvem.
+      </p>
+    </div>
+  </section>
 
+  <section id="projetos">
+    <h2 class="section-title">Atividades</h2>
+    <a
+      href="https://github.com/Arthur-Cardoso0"
+      target="_blank"
+      rel="noopener"
+      class="botao github-btn"
+    >Ver todos no GitHub ↗</a>
+    <div class="cards-grid">
+      <div class="card">
+  <div class="card-img-wrap">
+    <img 
+      src="https://www.unifan.edu.br/wp-content/uploads/2026/05/enga.jpg" 
+      alt="Dashboard de Análise de Dados"
+    >
+  </div>
+  <div class="card-body">
+    <span class="card-tag">📰 Publicado na UNIFAN</span>
+    <h3>Dashboard para Análise e Categorização de Dados</h3>
+    <p>Projeto desenvolvido com conceitos de Estatística, Ciência de Dados e Inteligência Artificial, integrando ensino e prática profissional.</p>
+    <a 
+      href="https://www.unifan.edu.br/noticias/alunos-de-engenharia-de-software-e-de-seguranca-da-informacao-desenvolvem-dashboard-para-analise-e-categorizacao-de-dados/" 
+      target="_blank" 
+      rel="noopener" 
+      class="card-link"
+    >Ver notícia ↗</a>
+  </div>
+</div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="fotos/sistema de loc veiculos.jpeg" alt="Sistema de Locação de Veículos">
+        </div>
+        <div class="card-body">
+          <h3>Sistema de Locação de Veículo</h3>
+          <p>Sistema acadêmico para gerenciamento de locação de veículos, com cadastro de clientes e controle de frota.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="fotos/Diagrama Entidade-Relacionamento (DER) utilizando o software Workbench MySQL..jpeg" alt="Diagrama ER">
+        </div>
+        <div class="card-body">
+          <h3>Diagrama ER — MySQL Workbench</h3>
+          <p>Modelagem de banco de dados relacional usando Diagrama Entidade-Relacionamento no MySQL Workbench.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-wrap dupla">
+          <img src="fotos/banco1.jpeg" alt="Banco de Dados 1">
+          <img src="fotos/banco2.png" alt="Banco de Dados 2">
+        </div>
+        <div class="card-body">
+          <h3>Banco de Dados Relacional</h3>
+          <p>Implementação de banco de dados relacional simples com queries SQL, tabelas normalizadas e relacionamentos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2 class="section-title">Contato</h2>
+    <p class="contact-sub">Vamos conversar? Me chame em qualquer canal abaixo.</p>
+    <div class="contact-grid">
+  <a class="contact-card" data-href="https://wa.me/qr/LQTOK72QVC5DN1" target="_blank">
+    <i class="fa-brands fa-whatsapp contact-icon"></i>
+    <span class="contact-label">WhatsApp</span>
+  </a>
+  <a class="contact-card" href="mailto:arthur.c34@hotmail.com">
+    <i class="fa-solid fa-envelope contact-icon"></i>
+    <span class="contact-label">Email</span>
+  </a>
+  <a class="contact-card" data-href="https://www.instagram.com/arthur.cds_/" target="_blank">
+    <i class="fa-brands fa-instagram contact-icon"></i>
+    <span class="contact-label">Instagram</span>
+  </a>
+  <a class="contact-card" data-href="https://www.linkedin.com/in/arthur-cardoso4613" target="_blank">
+    <i class="fa-brands fa-linkedin contact-icon"></i>
+    <span class="contact-label">LinkedIn</span>
+  </a>
+</div>
+  </section>
+
+  <footer>
+    <p>Desenvolvido por <strong>Arthur Cardoso</strong> · 2026</p>    
+  </footer>
+
+  <script src="portifolio.js"></script>
 </body>
 </html>
