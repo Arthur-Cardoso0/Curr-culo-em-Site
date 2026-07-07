@@ -1,4 +1,3 @@
-/* ── Reset & Base ─────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -222,7 +221,6 @@ section.visible {
   margin-bottom: 0.8rem;
 }
 
-/* ── Section Title ────────────────────────────────────── */
 .section-title {
   font-family: var(--font-head);
   font-size: clamp(2rem, 4vw, 3rem);
@@ -234,7 +232,6 @@ section.visible {
   background-clip: text;
 }
 
-/* ── Botão ────────────────────────────────────────────── */
 .botao,
 .botao-med {
   display: inline-flex;
@@ -264,7 +261,6 @@ section.visible {
   margin-bottom: 2.5rem;
 }
 
-/* ── Cards de Projetos ────────────────────────────────── */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -332,7 +328,6 @@ section.visible {
   line-height: 1.6;
 }
 
-/* ── Contato ──────────────────────────────────────────── */
 .contact-sub {
   color: var(--text-muted);
   margin-bottom: 2rem;
