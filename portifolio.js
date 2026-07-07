@@ -32,4 +32,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // ===== Lightbox das imagens em Atividades =====
+  const overlay = document.createElement("div");
+  overlay.className = "lightbox-overlay";
+  overlay.innerHTML = `
+    <button class="lightbox-close" aria-label="Fechar imagem">&times;</button>
+    <img src="" alt="">
+  `;
+  document.body.appendChild(overlay);
+
+  const lightboxImg = overlay.querySelector("img");
+  const lightboxClose = overlay.querySelector(".lightbox-close");
+
+  function abrirLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || "";
+    overlay.classList.add("ativo");
+    document.body.style.overflow = "hidden";
+  }
+
+  function fecharLightbox() {
+    overlay.classList.remove("ativo");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll("#projetos .card-img-wrap img").forEach(img => {
+    img.addEventListener("click", () => {
+      abrirLightbox(img.src, img.alt);
+    });
+  });
+
+  lightboxClose.addEventListener("click", fecharLightbox);
+
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) fecharLightbox();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay.classList.contains("ativo")) {
+      fecharLightbox();
+    }
+  });
+
 });

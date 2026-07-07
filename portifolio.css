@@ -261,6 +261,68 @@ section.visible {
   margin-bottom: 2.5rem;
 }
 
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.exp-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  transition: border-color 0.25s;
+}
+
+.exp-card:hover {
+  border-color: #444;
+}
+
+.exp-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.exp-head h3 {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.exp-periodo {
+  font-size: 0.85rem;
+  color: var(--accent2);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.exp-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.exp-lista {
+  margin-left: 1.1rem;
+}
+
+.exp-lista li {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.6rem;
+}
+
+.exp-lista li strong {
+  color: var(--text);
+}
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -295,6 +357,7 @@ section.visible {
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
+  cursor: zoom-in;
 }
 
 .card:hover .card-img-wrap img {
@@ -365,10 +428,37 @@ section.visible {
   font-size: 2.2rem;
 }
 
+.contact-card-cv {
+  width: 100%;
+  margin-top: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.contact-card-cv .contact-icon {
+  font-size: 1.6rem;
+  color: var(--bg) !important;
+}
+
+.contact-card-cv .contact-label {
+  color: var(--bg);
+  font-size: 1.1rem;
+}
+
+.contact-card-cv:hover {
+  background: var(--accent2);
+  border-color: var(--accent2);
+  transform: translateY(-3px);
+}
+
 .fa-whatsapp  { color: #25D366; }
 .fa-envelope  { color: #888; }
 .fa-instagram { color: #E1306C; }
 .fa-linkedin  { color: #0A66C2; }
+.fa-file-pdf  { color: #ff5d5d; }
 
 .contact-label {
   font-family: var(--font-head);
@@ -436,5 +526,75 @@ footer strong {
 
   section {
     padding: 3rem 1.25rem 5rem;
+  }
+}
+
+/* ===== Lightbox (zoom de imagens das Atividades) ===== */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  padding: 2rem;
+}
+
+.lightbox-overlay.ativo {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  transform: scale(0.92);
+  transition: transform 0.25s ease;
+}
+
+.lightbox-overlay.ativo img {
+  transform: scale(1);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.lightbox-close:hover {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .lightbox-close {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
   }
 }
