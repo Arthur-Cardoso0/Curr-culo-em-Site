@@ -1,206 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arthur Cardoso — Dev</title>
+  <title>Arthur Cardoso - Status do Personagem</title>
   <link rel="shortcut icon" type="image/png" href="fotos/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
-  <link rel="stylesheet" href="portifolio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/portifolio.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <span class="nav-logo">AC</span>
-      <ul>
-        <li><a href="#inicio" class="active">Início</a></li>
-        <li><a href="#experiencias">Experiências</a></li>
-        <li><a href="#projetos">Atividades</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section id="inicio">
-    <img src="fotos/Eu.jpeg" alt="Foto de Arthur Cardoso" class="foto">
-    <div class="hero-text">
-      <p class="saudacao">Olá, meu nome é</p>
-      <h1 class="nome-titulo">Arthur<br>Cardoso</h1>
-      <p class="tagline">Estudante de <strong>Engenharia de Software</strong> facinado por desenvolvimento, IA e boas práticas de programação.</p>
-      <div class="tech-pills">
-        <span>Java</span>
-        <span>JavaScript</span>
-        <span>React</span>
-        <span>Next.js</span>
-        <span>SQL</span>
-        <span>C#</span>
-        <span>Spring Boot</span>
-        <span>GitHub</span>
-      </div>
-      </div>
-      </div>
-    </div>
-    <div class="sobre-bloco">
-      <h2>Sobre mim</h2>
-      <p>
-        Sou estudante de Engenharia de Software e venho aprendendo desenvolvimento de sistemas, inteligência artificial e boas práticas de programação. Já trabalhei em projetos acadêmicos envolvendo estruturas de dados, aplicações web e atividades em Java — e estou sempre em busca de aprender mais sobre programação e novas tecnologias.
-      </p>
-      <p>
-        Meu objetivo é projetar e desenvolver sistemas eficientes, compreender arquitetura de software e boas práticas de segurança, além de aplicar conceitos de banco de dados e computação em nuvem.
-      </p>
-    </div>
-  </section>
-
-  <section id="experiencias">
-    <h2 class="section-title">Experiências</h2>
-    <div class="exp-list">
-      <div class="exp-card">
-        <div class="exp-head">
-          <h3>Jovem Aprendiz</h3>
-          <span class="exp-periodo">Fev 2024 – Jul 2024</span>
-        </div>
-        <p>Apoiei rotinas administrativas organizando documentos, atualizando planilhas e auxiliando na conciliação bancária e relatórios, além de atender colegas e clientes. Também tive contato com sistemas de gestão e apoio em reuniões, desenvolvendo organização, responsabilidade e comunicação no ambiente de trabalho.</p>
+  <main>
+    <section id="inicio" class="visible status-screen" aria-labelledby="character-name">
+      <div class="location-line"><span class="rune">✦</span> Ponto de Retorno <strong>Aparecida de Goiânia, GO</strong>
       </div>
 
-      <div class="exp-card">
-        <div class="exp-head">
-          <h3>Estagiário de TI</h3>
-          <span class="exp-periodo">Jun 2026 – Jul 2026</span>
+      <div class="character-sheet">
+        <div class="portrait-frame">
+          <img src="fotos/Eu.jpeg" alt="Retrato de Arthur Cardoso das Dores" class="foto">
+          <span class="portrait-rune">✧</span>
         </div>
-        <ul class="exp-lista">
-          <li><strong>Comunicação & trabalho em equipe</strong> — comunicação empresarial clara e eficaz, colaboração em projetos coletivos e comprometimento com metas organizacionais.</li>
-          <li><strong>Resolução de problemas & habilidades analíticas</strong> — identificação, análise e solução de problemas técnicos e operacionais, aplicando pensamento crítico e organização de processos.</li>
-          <li><strong>Suporte técnico & Help Desk</strong> — atendimento a usuários via acesso remoto, suporte de Help Desk, manutenção de sistemas e solução de problemas técnicos.</li>
-          <li><strong>Serviços técnicos & configuração de ambientes</strong> — instalação e implementação de softwares, configuração de ambientes de trabalho e manutenção preventiva e corretiva.</li>
-          <li><strong>Tecnologia & dados</strong> — conhecimento em SQL para análise de dados, automação de tarefas e otimização de processos.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
-  <section id="projetos">
-    <h2 class="section-title">Atividades</h2>
-    <a
-      href="https://github.com/Arthur-Cardoso0"
-      target="_blank"
-      rel="noopener"
-      class="botao github-btn"
-    >Ver todos no GitHub ↗</a>
-    <div class="cards-grid">
-      <div class="card">
-  <div class="card-img-wrap">
-    <img 
-      src="https://www.unifan.edu.br/wp-content/uploads/2026/05/enga.jpg" 
-      alt="Dashboard de Análise de Dados">
-  </div>
-  <div class="card-body">
-    <span class="card-tag">📰 Publicado na UNIFAN</span>
-    <h3>Dashboard para Análise e Categorização de Dados</h3>
-    <p>Projeto desenvolvido com conceitos de Estatística, Ciência de Dados e Inteligência Artificial, integrando ensino e prática profissional.</p>
-    <a 
-      href="https://www.unifan.edu.br/noticias/alunos-de-engenharia-de-software-e-de-seguranca-da-informacao-desenvolvem-dashboard-para-analise-e-categorizacao-de-dados/" 
-      target="_blank" 
-      rel="noopener" 
-      class="card-link"
-    >Ver notícia ↗</a>
-  </div>
-</div> 
-     
-     <div class="card">
-        <div class="card-grind">
-          <div class="card-img-wrap">
-          <img 
-            src="fotos/Trabalho-React.jpeg" 
-            alt="Trabalho React">
-        </div>
-         <div class="card-body">
-          <span class="card-tag">💻 GitHub</span>
-          <h3>catalogo - React</h3>
-          <p>Aplicação web desenvolvida em <strong>Next.js (React)</strong>, com componentes reutilizáveis e estilização em CSS, feita para a disciplina de Aplicações Web.</p>
-          <a
-            href="https://github.com/Arthur-Cardoso0/Trabalho-P2-Web"
-            target="_blank"
-            rel="noopener"
-            class="card-link"
-          >Ver no GitHub ↗</a>
-        </div>
-        </div>
-      </div>
-      
-      <div class="card">
-       <div class="card-grind">
-          <div class="card-img-wrap">
-          <img src="fotos/Api-cinema.jpeg" alt="API Cinema">
-        </div>
-         <div class="card-body">
-          <span class="card-tag">💻 GitHub</span>
-          <h3>API - Cinema</h3>
-          <p>API REST para gerenciamento de um sistema de cinema (filmes, salas, sessões, ingressos e lanches), construída com <strong>NestJS</strong>, <strong>Prisma</strong> e <strong>PostgreSQL</strong>, com documentação via Swagger.</p>
-          <a
-            href="https://github.com/Arthur-Cardoso0/API-cinema"
-            target="_blank"
-            rel="noopener"
-            class="card-link"
-          >Ver no GitHub ↗</a>
-        </div>
+        <div class="hero-text">
+          <p class="eyebrow">Identificação do Personagem</p>
+          <h1 id="character-name" class="nome-titulo">Arthur<br>Cardoso<br>das Dores</h1>
+          <p class="class-line"><span>Classe de Origem</span> Engenheiro de Software / Desenvolvedor</p>
+          <p class="level-line"><span>Nível Atual</span> 20</p>
+          <p class="level-line"><strong>Em ascensão</strong> · Estagiário</p>
+
+          <div class="status-bars" aria-label="Status do personagem">
+            <div class="status-row"><span>HP</span>
+              <div class="bar"><i style="width: 78%"></i></div><small>Vitalidade técnica</small>
+            </div>
+            <div class="status-row"><span>FP</span>
+              <div class="bar fp"><i style="width: 62%"></i></div><small>Conhecimento</small>
+            </div>
+            <div class="status-row"><span>STA</span>
+              <div class="bar sta"><i style="width: 86%"></i></div><small>Persistência</small>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-grind">
-          <div class="card-img-wrap">
-          <img src="fotos/payflow-API.png" alt="PayFlow API - Carteira Digital">
-        </div>
-         <div class="card-body">
-          <span class="card-tag">💻 GitHub</span>
-          <h3>API - Carteira Digital</h3>
-          <p>Desenvolvimento de uma API REST em Java para o gerenciamento de contas digitais, transferências P2P e pagamentos, contruida com <strong>Spring Boot</strong>, <strong>JAVA</strong> e <strong>PostgreSQL</strong>, com documentação via Swagger.</p>
-          <a
-            href="https://github.com/Arthur-Cardoso0/payflow"
-            target="_blank"
-            rel="noopener"
-            class="card-link"
-          >Ver no GitHub ↗</a>
-        </div>
-        </div>
+      <div class="panel-grid">
+        <article class="lore-panel">
+          <p class="section-kicker">Lore Pessoal</p>
+          <h2>Sobre o personagem</h2>
+          <p>Um explorador do ecossistema de tecnologia, focado na arquitetura de sistemas corporativos. Especialista no
+            forjamento de aplicações sólidas, com proficiência no desenvolvimento de rotas seguras de comunicação de
+            dados. Atualmente aprimorando atributos de lógica e infraestrutura para enfrentar sistemas de alta
+            complexidade.</p>
+        </article>
+
+        <article class="quick-panel">
+          <p class="section-kicker">Equipamento</p>
+          <h2>Atributos em destaque</h2>
+          <div class="attribute-list">
+            <span><b>FÉ</b> Java · C#</span>
+            <span><b>MND</b> HTML · CSS · JavaScript</span>
+            <span><b>INT</b> Estruturas de Dados · Lógica</span>
+            <span><b>ARC</b> APIs REST · Spring Boot · .NET · React.js</span>
+            <span><b>DES</b> Git · GitHub · SQL </span>
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
 
-  <section id="contato">
-    <h2 class="section-title">Contato</h2>
-    <p class="contact-sub">Vamos conversar? Me chame em qualquer canal abaixo.</p>
-    <div class="contact-grid">
-  <a class="contact-card" data-href="https://wa.me/qr/LQTOK72QVC5DN1" target="_blank">
-    <i class="fa-brands fa-whatsapp contact-icon"></i>
-    <span class="contact-label">WhatsApp</span>
-  </a>
-  <a class="contact-card" href="mailto:arthur.c34@hotmail.com">
-    <i class="fa-solid fa-envelope contact-icon"></i>
-    <span class="contact-label">Email</span>
-  </a>
-  <a class="contact-card" data-href="https://www.instagram.com/arthur.cds_/" target="_blank">
-    <i class="fa-brands fa-instagram contact-icon"></i>
-    <span class="contact-label">Instagram</span>
-  </a>
-  <a class="contact-card" data-href="https://www.linkedin.com/in/arthur-cardoso4613" target="_blank">
-    <i class="fa-brands fa-linkedin contact-icon"></i>
-    <span class="contact-label">LinkedIn</span>
-  </a>
-</div>
-<a class="contact-card contact-card-cv" href="Curriculo-Arthur-Cardoso.pdf" download>
-  <i class="fa-solid fa-file-pdf contact-icon"></i>
-  <span class="contact-label">Baixar Currículo</span>
-</a>
-  </section>
+      <div class="panel-grid panel-grid-full">
+        <article class="lore-panel">
+          <p class="section-kicker">Pergaminhos de Conhecimento</p>
+          <h2>Formação Acadêmica</h2>
+          <ul class="edu-list">
+            <li><strong>Bacharelado em Engenharia de Software</strong><span class="edu-period">2024 — 2028 · Em
+                andamento</span></li>
+            <li><strong>Cedaspy — Treinamento de Informática</strong><span class="edu-period">2022</span></li>
+            <li><strong>Fundamentos da criação de sites com HTML e CSS</strong><span class="edu-period">2025</span></li>
+          </ul>
+        </article>
 
+        <article class="quick-panel">
+          <p class="section-kicker">Línguas do Reino</p>
+          <h2>Idiomas</h2>
+          <div class="lang-list">
+            <span>Português <small>Nativo</small></span>
+            <span>Inglês</span>
+            <span>Espanhol</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
   <footer>
-    <p>Desenvolvido por <strong>Arthur Cardoso</strong> · 2026</p>    
+    <p>Forjado por <strong>Arthur Cardoso</strong> · 2026</p>
   </footer>
-
-  <script src="portifolio.js"></script>
+  <script src="js/portifolio.js"></script>
 </body>
+
 </html>
