@@ -14,7 +14,6 @@ O projeto foi desenvolvido com foco em:
 - Organização de informações pessoais e acadêmicas;
 - Exibição de projetos e atividades;
 - Registro de experiências profissionais;
-- Disponibilização de canais de contato e currículo em PDF;
 - Prática de desenvolvimento web front-end.
 
 ## ✨ Funcionalidades
